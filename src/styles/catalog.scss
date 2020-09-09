@@ -1,7 +1,12 @@
 .catalog {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
+  gap: 50px $row-gap;
+  grid-template-columns: repeat(4, $card-size);
+
+  @media (max-width: ($card-size + $row-gap) * 4) {
+    & {
+      grid-template-columns: repeat(auto-fit, $card-size);
+    }
+  }
 }

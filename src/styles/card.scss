@@ -1,8 +1,7 @@
 .card {
-  margin: 0 24px 51px;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: $card-size;
   padding: 0 14px 14px;
 
   border: 1px solid #f3f3f3;
