@@ -12,6 +12,8 @@
     @include font-size-12-500;
     text-transform: uppercase;
 
+    transition: color 300ms;
+
     &--is-active {
       color: $moyo-color;
     }
